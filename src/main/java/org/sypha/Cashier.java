@@ -1,5 +1,7 @@
 package org.sypha;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Cashier extends Person implements CashierDuties{
 
 
@@ -11,7 +13,7 @@ public class Cashier extends Person implements CashierDuties{
 
 
     @Override
-    public void giveReciept(Customer customer) {
+    public void giveReciept(@NotNull Customer customer) {
 
         int total=0;
         System.out.println("LIST OF ITEMS");
